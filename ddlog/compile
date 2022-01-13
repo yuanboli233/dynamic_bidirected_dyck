@@ -1,0 +1,2 @@
+ddlog -i dyck.dl
+(cd dyck_ddlog && cargo build --release)

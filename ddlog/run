@@ -1,0 +1,1 @@
+dyck_ddlog/target/release/dyck_cli < graph.dat

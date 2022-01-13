@@ -1,0 +1,8 @@
+typedef node = u32
+input relation RA(idx: u16, s: node, t: node)
+input relation RB(idx: u16, s: node, t: node)
+input relation EMPTY(s: node, t: node)
+output relation S(s: node, t: node)
+S(x, y) :- S(x,z), S(z,y).
+S(x, z) :- RA(i, x, a), S(a, b), RB(i, b, z).
+S(x, y) :- EMPTY(x, y).
